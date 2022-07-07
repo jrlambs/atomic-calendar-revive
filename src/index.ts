@@ -439,7 +439,7 @@ class AtomicCalendarRevive extends LitElement {
       					</div>
 	    				<div class=${dayClassTodayEvent}>${eventDateFormat}</div>
 					</td>
-					<td style="width: 100%;  ${finishedEventsStyle} ${lastEventStyle}">
+					<td style="width: 100%; padding-top: 0px; padding: 0px; ${finishedEventsStyle} ${lastEventStyle}">
 						<div>${currentEventLine}</div>
 						<div class="event-right">
 							<div class="event-main">${getTitleHTML(this._config, event)}</div>

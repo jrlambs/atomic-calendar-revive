@@ -63,7 +63,7 @@ export const styles: CSSResultGroup = css`
 		}
 
 		.event-left {
-			padding: 4px 10px 3px 8px;
+			padding: 1px 1px 1px 1px;
 			text-align: center;
 			vertical-align: top;
 		}
