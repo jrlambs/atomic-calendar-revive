@@ -26,6 +26,7 @@ export interface atomicCardConfig extends LovelaceCardConfig {
 	showWeekDay?: boolean;
 	fullTextTime?: boolean;
 	showCurrentEventLine?: boolean;
+	atomicCardConfig?: boolean;
 	showDate?: boolean;
 	dateFormat?: string;
 	hoursFormat?: string;
@@ -138,7 +139,7 @@ export interface EntityConfig {
 	type?: string;
 	name?: string;
 	icon?: string;
-	
+
 }
 
 export interface ConfigEntity extends EntityConfig {
