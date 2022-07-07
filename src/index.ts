@@ -186,14 +186,14 @@ class AtomicCalendarRevive extends LitElement {
 		}
 		this.updateCard();
 
-		return html` <ha-card class="cal-card" style="--card-height: ${this._config.cardHeight}">
+		return html` <ha-card class="cal-card" style="line-height: normal; --card-height: ${this._config.cardHeight}">
 			${this._config.name || this._config.showDate || (this.showLoader && this._config.showLoader)
-				? html` <div class="header">
+				? html` <div class="header" style='font-size: 1rem'>
 						${this._config.name
-							? html`<div class="headerName" @click="${() => this.handleToggle()}">${this._config.name}</div>`
+							? html`<div class="headerName" style='font-size: 1rem' @click="${() => this.handleToggle()}">${this._config.name}</div>`
 							: ''}
 						${this.showLoader && this._config.showLoader ? html`<div class="loader"></div>` : ''}
-						${this._config.showDate ? html`<div class="headerDate">${getDate(this._config)}</div>` : ''}
+						${this._config.showDate ? html`<div class="headerDate" style='font-size: 1rem'>${getDate(this._config)}</div>` : ''}
 				  </div>`
 				: ''}
 
@@ -432,7 +432,7 @@ class AtomicCalendarRevive extends LitElement {
 
 				const dayClassTodayEvent = event.startDateTime.isSame(dayjs(), 'day') ? `event-leftCurrentDay` : ``;
 
-				return html`<tr class="${dayWrap}" style="color:  ${this._config.dayWrapperLineColor};">
+				return html`<tr class="${dayWrap}" style="line-height: normal; color:  ${this._config.dayWrapperLineColor};">
 	  				<td class="event-left" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
 		  				<div class=${dayClassTodayEvent}>
 			  				${i === 0 && this._config.showWeekDay ? event.startTimeToShow.format('ddd') : ''}

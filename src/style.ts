@@ -27,8 +27,8 @@ export const styles: CSSResultGroup = css`
 			line-height: var(--paper-font-headline_-_line-height);
 			text-rendering: var(--paper-font-common-expensive-kerning_-_text-rendering);
 			opacity: var(--dark-primary-opacity);
-			padding: 4px 8px 12px 0px;
 			float: left;
+			font-size: 1rem;
 		}
 
 		.headerDate {
@@ -36,9 +36,9 @@ export const styles: CSSResultGroup = css`
 			font-size: 1.3rem;
 			font-weight: 400;
 			color: var(--primary-text-color);
-			padding: 4px 8px 12px 0px;
 			line-height: var(--paper-font-headline_-_line-height);
 			float: right;
+			font-size: 1rem;
 		}
 
 		table {
