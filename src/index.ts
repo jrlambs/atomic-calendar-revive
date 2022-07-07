@@ -186,7 +186,7 @@ class AtomicCalendarRevive extends LitElement {
 		}
 		this.updateCard();
 
-		return html` <ha-card class="cal-card" style="line-height: normal; --card-height: ${this._config.cardHeight}">
+		return html` <ha-card class="cal-card" style="line-height: 80%; --card-height: ${this._config.cardHeight}">
 			${this._config.name || this._config.showDate || (this.showLoader && this._config.showLoader)
 				? html` <div class="header" style='font-size: 1rem'>
 						${this._config.name
@@ -432,7 +432,7 @@ class AtomicCalendarRevive extends LitElement {
 
 				const dayClassTodayEvent = event.startDateTime.isSame(dayjs(), 'day') ? `event-leftCurrentDay` : ``;
 
-				return html`<tr class="${dayWrap}" style="line-height: normal; color:  ${this._config.dayWrapperLineColor};">
+				return html`<tr class="${dayWrap}" style="line-height: 80%; color:  ${this._config.dayWrapperLineColor};">
 	  				<td class="event-left" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
 		  				<div class=${dayClassTodayEvent}>
 			  				${i === 0 && this._config.showWeekDay ? event.startTimeToShow.format('ddd') : ''}
