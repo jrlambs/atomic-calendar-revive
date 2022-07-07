@@ -433,24 +433,24 @@ class AtomicCalendarRevive extends LitElement {
 				const dayClassTodayEvent = event.startDateTime.isSame(dayjs(), 'day') ? `event-leftCurrentDay` : ``;
 
 				return html`<tr class="${dayWrap}" style="color:  ${this._config.dayWrapperLineColor};">
-	  <td class="event-left" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
-		  <div class=${dayClassTodayEvent}>
-			  ${i === 0 && this._config.showWeekDay ? event.startTimeToShow.format('ddd') : ''}
-      </div>
-	    <div class=${dayClassTodayEvent}>${eventDateFormat}</div>
-		</td>
-		<td style="width: 100%;  ${finishedEventsStyle} ${lastEventStyle}">
-			<div>${currentEventLine}</div>
-				<div class="event-right">
-					<div class="event-main">${getTitleHTML(this._config, event)}</div>
-					<div class="event-location">${getLocationHTML(this._config, event)} ${eventCalName}</div>
-				</div>
-        <div class="event-right">${hoursHTML} ${relativeTime}</div>
-				${getDescription(this._config, event)}</div>
-				</div>
-				${progressBar}
-    </td>
-	</tr>`;
+	  				<td class="event-left" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
+		  				<div class=${dayClassTodayEvent}>
+			  				${i === 0 && this._config.showWeekDay ? event.startTimeToShow.format('ddd') : ''}
+      					</div>
+	    				<div class=${dayClassTodayEvent}>${eventDateFormat}</div>
+					</td>
+					<td style="width: 100%;  ${finishedEventsStyle} ${lastEventStyle}">
+						<div>${currentEventLine}</div>
+						<div class="event-right">
+							<div class="event-main">${getTitleHTML(this._config, event)}</div>
+							<div class="event-location">${getLocationHTML(this._config, event)} ${eventCalName} ${this._config.hoursOnSameLine ? hoursHTML: ''}</div>
+						</div>
+        				<div class="event-right">${!this._config.hoursOnSameLine ? hoursHTML : ''} ${relativeTime}</div>
+						${getDescription(this._config, event)}</div>
+						</div>
+						${progressBar}
+    				</td>
+				</tr>`;
 			});
 			var daysEvents = html`${this._config.showWeekNumber ? weekNumberResults.currentWeekHTML : ''}${htmlEvents}`;
 			return daysEvents;
