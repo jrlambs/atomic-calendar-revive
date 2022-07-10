@@ -186,14 +186,14 @@ class AtomicCalendarRevive extends LitElement {
 		}
 		this.updateCard();
 
-		return html` <ha-card class="cal-card" style="line-height: 80%; --card-height: ${this._config.cardHeight}">
+		return html` <ha-card class="cal-card" style="${this._config.superCompactMode ? 'line-height: 80%;' : ''} --card-height: ${this._config.cardHeight}">
 			${this._config.name || this._config.showDate || (this.showLoader && this._config.showLoader)
-				? html` <div class="header" style='font-size: 1rem'>
+				? html` <div class="header" style="${this._config.superCompactMode ? 'font-size: 1rem ' : ''}">
 						${this._config.name
-							? html`<div class="headerName" style='font-size: 1rem' @click="${() => this.handleToggle()}">${this._config.name}</div>`
+							? html`<div class="${this._config.superCompactMode ? 'headerNameSuperCompact' : 'headerName'}" style="${this._config.superCompactMode ? 'font-size: 1rem ' : ''}" @click="${() => this.handleToggle()}">${this._config.name}</div>`
 							: ''}
 						${this.showLoader && this._config.showLoader ? html`<div class="loader"></div>` : ''}
-						${this._config.showDate ? html`<div class="headerDate" style='font-size: 1rem'>${getDate(this._config)}</div>` : ''}
+						${this._config.showDate ? html`<div class="${this._config.superCompactMode ? 'headerDateSuperCompact' : 'headerDate'}" style="${this._config.superCompactMode ? 'font-size: 1rem ' : ''}">${getDate(this._config)}</div>` : ''}
 				  </div>`
 				: ''}
 
@@ -432,14 +432,14 @@ class AtomicCalendarRevive extends LitElement {
 
 				const dayClassTodayEvent = event.startDateTime.isSame(dayjs(), 'day') ? `event-leftCurrentDay` : ``;
 
-				return html`<tr class="${dayWrap}" style="line-height: 80%; color:  ${this._config.dayWrapperLineColor};">
-	  				<td class="event-left" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
+				return html`<tr class="${dayWrap}" style="${this._config.superCompactMode ? 'line-height: 80%; ' : ''} color:  ${this._config.dayWrapperLineColor};">
+	  				<td class="${this._config.superCompactMode ? 'event-leftSuperCompact' : 'event-left'}" style="color: ${this._config.dateColor};font-size: ${this._config.dateSize}%;">
 		  				<div class=${dayClassTodayEvent}>
 			  				${i === 0 && this._config.showWeekDay ? event.startTimeToShow.format('ddd') : ''}
       					</div>
 	    				<div class=${dayClassTodayEvent}>${eventDateFormat}</div>
 					</td>
-					<td style="width: 100%; padding-top: 2px; padding-bottom: 2px; ${finishedEventsStyle} ${lastEventStyle}">
+					<td style="width: 100%; ${this._config.superCompactMode ? 'padding-top: 2px; padding-bottom: 2px;' : ''} ${finishedEventsStyle} ${lastEventStyle}">
 						<div>${currentEventLine}</div>
 						<div class="event-right">
 							<div class="event-main">${getTitleHTML(this._config, event)}</div>

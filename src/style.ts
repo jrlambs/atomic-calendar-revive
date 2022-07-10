@@ -27,19 +27,43 @@ export const styles: CSSResultGroup = css`
 			line-height: var(--paper-font-headline_-_line-height);
 			text-rendering: var(--paper-font-common-expensive-kerning_-_text-rendering);
 			opacity: var(--dark-primary-opacity);
+			padding: 4px 8px 12px 0px;
 			float: left;
-			font-size: 1rem;
 		}
+
+
+	    .headerNameSuperCompact {
+            font-family: var(--paper-font-headline_-_font-family);
+            -webkit-font-smoothing: var(--paper-font-headline_-_-webkit-font-smoothing);
+            font-size: var(--paper-font-headline_-_font-size);
+            font-weight: var(--paper-font-headline_-_font-weight);
+            letter-spacing: var(--paper-font-headline_-_letter-spacing);
+            line-height: var(--paper-font-headline_-_line-height);
+            text-rendering: var(--paper-font-common-expensive-kerning_-_text-rendering);
+            opacity: var(--dark-primary-opacity);
+            float: left;
+            font-size: 1rem;
+        }
 
 		.headerDate {
 			font-size: var(--paper-font-headline_-_font-size);
 			font-size: 1.3rem;
 			font-weight: 400;
 			color: var(--primary-text-color);
+			padding: 4px 8px 12px 0px;
 			line-height: var(--paper-font-headline_-_line-height);
 			float: right;
-			font-size: 1rem;
 		}
+
+		.headerDateSuperCompact {
+            font-size: var(--paper-font-headline_-_font-size);
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--primary-text-color);
+            line-height: var(--paper-font-headline_-_line-height);
+            float: right;
+            font-size: 1rem;
+        }
 
 		table {
 			color: black;
@@ -63,10 +87,16 @@ export const styles: CSSResultGroup = css`
 		}
 
 		.event-left {
-			padding: 1px 1px 1px 1px;
+			padding: 4px 10px 3px 8px;
 			text-align: center;
 			vertical-align: top;
 		}
+
+		.event-leftSuperCompact {
+            padding: 1px 1px 1px 1px;
+            text-align: center;
+            vertical-align: top;
+        }
 
 		.event-leftCurrentDay {
 			width: 40px;
