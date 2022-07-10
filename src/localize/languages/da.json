@@ -19,12 +19,12 @@
     },
     "errors": {
         "invalid_configuration": "Konfiguration er ikke korrekt",
-        "update_card": "Kalender kan ikke blive indlæste fra Home Assistant atomic-calendar-revive",
+        "update_card": "Kalender kan ikke blive indlæste fra Home Assistant atomic-calendar-revive-jrlambs",
         "no_entities": "Der er ikke valgt nogen entiteter"
     },
     "required": {
         "name": "Påkrævet",
-        "secondary": "Valg er påkrævet for at atomic-calendar-revive skal virke"
+        "secondary": "Valg er påkrævet for at atomic-calendar-revive-jrlambs skal virke"
     },
     "main": {
         "name": "Hoved muligheder",

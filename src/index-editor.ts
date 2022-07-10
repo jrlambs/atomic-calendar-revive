@@ -32,7 +32,7 @@ const options = {
 	},
 };
 
-@customElement('atomic-calendar-revive-editor')
+@customElement('atomic-calendar-revive-jrlambs-editor')
 export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCardEditor {
 	@property({ attribute: false })
 	public hass!: HomeAssistant;
@@ -346,7 +346,7 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 			
 					</div>
 					`;
-					})
+				})
 					}
 				</div>
 				`
@@ -386,16 +386,16 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 						.configValue=${'defaultMode'}>
 						<paper-listbox slot="dropdown-content" .selected=${defaultModes.indexOf(this._defaultMode)}>
 							${defaultModes.map((mode) => {
-							return html` <paper-item>${mode}</paper-item> `;
-							})}
+					return html` <paper-item>${mode}</paper-item> `;
+				})}
 						</paper-listbox>
 					</paper-dropdown-menu>
 					<paper-dropdown-menu label="${localize('main.fields.linkTarget')}" @value-changed=${this._valueChanged}
 						.configValue=${'linkTarget'}>
 						<paper-listbox slot="dropdown-content" .selected=${linkTargets.indexOf(this._linkTarget)}>
 							${linkTargets.map((linkTarget) => {
-							return html` <paper-item>${linkTarget}</paper-item> `;
-							})}
+					return html` <paper-item>${linkTarget}</paper-item> `;
+				})}
 						</paper-listbox>
 					</paper-dropdown-menu><br />
 					<div class="side-by-side">
@@ -408,66 +408,66 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch .checked=${this._showLoader !==false} .configValue=${'showLoader'}
+							<ha-switch .checked=${this._showLoader !== false} .configValue=${'showLoader'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showLoader')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showDate ? 'off' : 'on' }`} .checked=${this._showDate !==false}
+							<ha-switch aria-label=${`Toggle ${this._showDate ? 'off' : 'on'}`} .checked=${this._showDate !== false}
 								.configValue=${'showDate'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showDate')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle Show Declined ${this._showDeclined ? 'off' : 'on' }`}
-								.checked=${this._showDeclined !==false} .configValue=${'showDeclined'}
+							<ha-switch aria-label=${`Toggle Show Declined ${this._showDeclined ? 'off' : 'on'}`}
+								.checked=${this._showDeclined !== false} .configValue=${'showDeclined'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showDeclined')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._sortByStartTime ? 'off' : 'on' }`}
-								.checked=${this._sortByStartTime !==false} .configValue=${'sortByStartTime'}
+							<ha-switch aria-label=${`Toggle ${this._sortByStartTime ? 'off' : 'on'}`}
+								.checked=${this._sortByStartTime !== false} .configValue=${'sortByStartTime'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.sortByStartTime')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._hideFinishedEvents ? 'off' : 'on' }`}
-								.checked=${this._hideFinishedEvents !==false} .configValue=${'hideFinishedEvents'}
+							<ha-switch aria-label=${`Toggle ${this._hideFinishedEvents ? 'off' : 'on'}`}
+								.checked=${this._hideFinishedEvents !== false} .configValue=${'hideFinishedEvents'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.hideFinishedEvents')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showLocation ? 'on' : 'off' }`} .checked=${this._showLocation
-								!==false} .configValue=${'showLocation'} @change=${this._valueChanged}></ha-switch>
+							<ha-switch aria-label=${`Toggle ${this._showLocation ? 'on' : 'off'}`} .checked=${this._showLocation
+					!== false} .configValue=${'showLocation'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showLocation')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showRelativeTime ? 'on' : 'off' }`}
-								.checked=${this._showRelativeTime !==false} .configValue=${'showRelativeTime'}
+							<ha-switch aria-label=${`Toggle ${this._showRelativeTime ? 'on' : 'off'}`}
+								.checked=${this._showRelativeTime !== false} .configValue=${'showRelativeTime'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showRelativeTime')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._hideDuplicates ? 'on' : 'off' }`}
-								.checked=${this._hideDuplicates !==false} .configValue=${'hideDuplicates'}
+							<ha-switch aria-label=${`Toggle ${this._hideDuplicates ? 'on' : 'off'}`}
+								.checked=${this._hideDuplicates !== false} .configValue=${'hideDuplicates'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.hideDuplicates')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showMultiDay ? 'on' : 'off' }`} .checked=${this._showMultiDay
-								!==false} .configValue=${'showMultiDay'} @change=${this._valueChanged}></ha-switch>
+							<ha-switch aria-label=${`Toggle ${this._showMultiDay ? 'on' : 'off'}`} .checked=${this._showMultiDay
+					!== false} .configValue=${'showMultiDay'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showMultiDay')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showMultiDayEventParts ? 'on' : 'off' }`}
-								.checked=${this._showMultiDayEventParts !==false} .configValue=${'showMultiDayEventParts'}
+							<ha-switch aria-label=${`Toggle ${this._showMultiDayEventParts ? 'on' : 'off'}`}
+								.checked=${this._showMultiDayEventParts !== false} .configValue=${'showMultiDayEventParts'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('main.fields.showMultiDayEventParts')}</label>
 						</div>
@@ -501,89 +501,89 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 						.configValue=${'hiddenEventText'} @value-changed=${this._valueChanged}></paper-input>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showCurrentEventLine ? 'off' : 'on' }`}
-								.checked=${this._showCurrentEventLine !==false} .configValue=${'showCurrentEventLine'}
+							<ha-switch aria-label=${`Toggle ${this._showCurrentEventLine ? 'off' : 'on'}`}
+								.checked=${this._showCurrentEventLine !== false} .configValue=${'showCurrentEventLine'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showCurrentEventLine')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showProgressBar ? 'on' : 'off' }`}
-								.checked=${this._showProgressBar !==false} .configValue=${'showProgressBar'}
+							<ha-switch aria-label=${`Toggle ${this._showProgressBar ? 'on' : 'off'}`}
+								.checked=${this._showProgressBar !== false} .configValue=${'showProgressBar'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showProgressBar')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showMonth ? 'off' : 'on' }`} .checked=${this._showMonth
-								!==false} .configValue=${'showMonth'} @change=${this._valueChanged}></ha-switch>
+							<ha-switch aria-label=${`Toggle ${this._showMonth ? 'off' : 'on'}`} .checked=${this._showMonth
+					!== false} .configValue=${'showMonth'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showMonth')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showWeekDay ? 'off' : 'on' }`} .checked=${this._showWeekDay
-								!==false} .configValue=${'showWeekDay'} @change=${this._valueChanged}></ha-switch>
+							<ha-switch aria-label=${`Toggle ${this._showWeekDay ? 'off' : 'on'}`} .checked=${this._showWeekDay
+					!== false} .configValue=${'showWeekDay'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showWeekDay')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showDescription ? 'on' : 'off' }`}
-								.checked=${this._showDescription !==false} .configValue=${'showDescription'}
+							<ha-switch aria-label=${`Toggle ${this._showDescription ? 'on' : 'off'}`}
+								.checked=${this._showDescription !== false} .configValue=${'showDescription'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showDescription')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._disableEventLink ? 'off' : 'on' }`}
-								.checked=${this._disableEventLink !==false} .configValue=${'disableEventLink'}
+							<ha-switch aria-label=${`Toggle ${this._disableEventLink ? 'off' : 'on'}`}
+								.checked=${this._disableEventLink !== false} .configValue=${'disableEventLink'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.disableEventLink')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._disableLocationLink ? 'off' : 'on' }`}
-								.checked=${this._disableLocationLink !==false} .configValue=${'disableLocationLink'}
+							<ha-switch aria-label=${`Toggle ${this._disableLocationLink ? 'off' : 'on'}`}
+								.checked=${this._disableLocationLink !== false} .configValue=${'disableLocationLink'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.disableLocationLink')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showNoEventsForToday ? 'off' : 'on' }`}
-								.checked=${this._showNoEventsForToday !==false} .configValue=${'showNoEventsForToday'}
+							<ha-switch aria-label=${`Toggle ${this._showNoEventsForToday ? 'off' : 'on'}`}
+								.checked=${this._showNoEventsForToday !== false} .configValue=${'showNoEventsForToday'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showNoEventsForToday')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showFullDayProgress ? 'off' : 'on' }`}
-								.checked=${this._showFullDayProgress !==false} .configValue=${'showFullDayProgress'}
+							<ha-switch aria-label=${`Toggle ${this._showFullDayProgress ? 'off' : 'on'}`}
+								.checked=${this._showFullDayProgress !== false} .configValue=${'showFullDayProgress'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showFullDayProgress')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showEventIcon ? 'off' : 'on' }`} .checked=${this._showEventIcon
-								!==false} .configValue=${'showEventIcon'} @change=${this._valueChanged}></ha-switch>
+							<ha-switch aria-label=${`Toggle ${this._showEventIcon ? 'off' : 'on'}`} .checked=${this._showEventIcon
+					!== false} .configValue=${'showEventIcon'} @change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showEventIcon')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showHiddenText ? 'on' : 'off' }`}
-								.checked=${this._showHiddenText !==false} .configValue=${'showHiddenText'}
+							<ha-switch aria-label=${`Toggle ${this._showHiddenText ? 'on' : 'off'}`}
+								.checked=${this._showHiddenText !== false} .configValue=${'showHiddenText'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showHiddenText')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showCalendarName ? 'on' : 'off' }`}
-								.checked=${this._showCalendarName !==false} .configValue=${'showCalendarName'}
+							<ha-switch aria-label=${`Toggle ${this._showCalendarName ? 'on' : 'off'}`}
+								.checked=${this._showCalendarName !== false} .configValue=${'showCalendarName'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showCalendarName')}</label>
 						</div>
 					</div>
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showWeekNumber ? 'on' : 'off' }`}
-								.checked=${this._showWeekNumber !==false} .configValue=${'showWeekNumber'}
+							<ha-switch aria-label=${`Toggle ${this._showWeekNumber ? 'on' : 'off'}`}
+								.checked=${this._showWeekNumber !== false} .configValue=${'showWeekNumber'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('event.fields.showWeekNumber')}</label>
 						</div>
@@ -603,34 +603,34 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 				${options.calendar.show
 				? html`
 				<div class="values">
-					<ha-switch aria-label=${`Toggle ${this._calShowDescription ? 'off' : 'on' }`}
-						.checked=${this._calShowDescription !==false} .configValue=${'calShowDescription'}
+					<ha-switch aria-label=${`Toggle ${this._calShowDescription ? 'off' : 'on'}`}
+						.checked=${this._calShowDescription !== false} .configValue=${'calShowDescription'}
 						@change=${this._valueChanged}></ha-switch>
 					<label class="mdc-label">${localize('calendar.fields.calShowDescription')}</label>
 					<div calss="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._showLastCalendarWeek ? 'off' : 'on' }`}
-								.checked=${this._showLastCalendarWeek !==false} .configValue=${'showLastCalendarWeek'}
+							<ha-switch aria-label=${`Toggle ${this._showLastCalendarWeek ? 'off' : 'on'}`}
+								.checked=${this._showLastCalendarWeek !== false} .configValue=${'showLastCalendarWeek'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('calendar.fields.showLastCalendarWeek')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._disableCalEventLink ? 'off' : 'on' }`}
-								.checked=${this._disableCalEventLink !==false} .configValue=${'disableCalEventLink'}
+							<ha-switch aria-label=${`Toggle ${this._disableCalEventLink ? 'off' : 'on'}`}
+								.checked=${this._disableCalEventLink !== false} .configValue=${'disableCalEventLink'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('calendar.fields.disableCalEventLink')}</label>
 						</div>
 					</div>
 					<div calss="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._disableCalLocationLink ? 'off' : 'on' }`}
-								.checked=${this._disableCalLocationLink !==false} .configValue=${'disableCalLocationLink'}
+							<ha-switch aria-label=${`Toggle ${this._disableCalLocationLink ? 'off' : 'on'}`}
+								.checked=${this._disableCalLocationLink !== false} .configValue=${'disableCalLocationLink'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('calendar.fields.disableCalLocationLink')}</label>
 						</div>
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._disableCalLink ? 'off' : 'on' }`}
-								.checked=${this._disableCalLink !==false} .configValue=${'disableCalLink'}
+							<ha-switch aria-label=${`Toggle ${this._disableCalLink ? 'off' : 'on'}`}
+								.checked=${this._disableCalLink !== false} .configValue=${'disableCalLink'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('calendar.fields.disableCalLink')}</label>
 						</div>
@@ -652,8 +652,8 @@ export class AtomicCalendarReviveEditor extends LitElement implements LovelaceCa
 				<div class="values">
 					<div class="side-by-side">
 						<div>
-							<ha-switch aria-label=${`Toggle ${this._dimFinishedEvents ? 'off' : 'on' }`}
-								.checked=${this._dimFinishedEvents !==false} .configValue=${'dimFinishedEvents'}
+							<ha-switch aria-label=${`Toggle ${this._dimFinishedEvents ? 'off' : 'on'}`}
+								.checked=${this._dimFinishedEvents !== false} .configValue=${'dimFinishedEvents'}
 								@change=${this._valueChanged}></ha-switch>
 							<label class="mdc-label">${localize('appearance.fields.dimFinishedEvents')}</label>
 						</div>

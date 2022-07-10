@@ -25,7 +25,7 @@ Before Submitting A Bug Report
 * **Check the :ref:`qucikstart`** You may have miss-configured the plugin and
   this is resulting in the issue you see
 * **Check the :ref:`FAQs`** for a list of common questions and problems.
-* **Perform a `cursory search <https://github.com/marksie1988/atomic-calendar-revive/issues?q=is%3Aissue>`_**
+* **Perform a `cursory search <https://github.com/marksie1988/atomic-calendar-revive-jrlambs/issues?q=is%3Aissue>`_**
   to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to
   the existing issue instead of opening a new one.
 
@@ -35,7 +35,7 @@ How do i submit a bug report?
 
 Bugs are tracked as `GitHub issues <https://guides.github.com/features/issues/>`_.
 After you've determined this is not a configuration issue, create an issue on github
-and provide the following information by filling in `the template <https://github.com/marksie1988/atomic-calendar-revive/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D+>`_.
+and provide the following information by filling in `the template <https://github.com/marksie1988/atomic-calendar-revive-jrlambs/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D+>`_.
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 

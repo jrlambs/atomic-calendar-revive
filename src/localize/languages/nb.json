@@ -14,7 +14,7 @@
 		"common": {
 			"previous": "Forrige",
 			"next": "Neste",
-            "week": "Uke"
+			"week": "Uke"
 		}
 	},
 	"errors": {
@@ -24,7 +24,7 @@
 	},
 	"required": {
 		"name": "Obligatorisk",
-		"secondary": "Obligatoriske valg for at atomic-calendar-revive skal virke"
+		"secondary": "Obligatoriske valg for at atomic-calendar-revive-jrlambs skal virke"
 	},
 	"main": {
 		"name": "Hovedvalg",

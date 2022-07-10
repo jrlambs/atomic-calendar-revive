@@ -101,7 +101,7 @@ class AtomicCalendarRevive extends LitElement {
 	}
 
 	public static async getConfigElement(): Promise<LovelaceCardEditor> {
-		return document.createElement('atomic-calendar-revive-editor') as LovelaceCardEditor;
+		return document.createElement('atomic-calendar-revive-jrlambs-editor') as LovelaceCardEditor;
 	}
 
 	public static getStubConfig() {
@@ -229,7 +229,7 @@ class AtomicCalendarRevive extends LitElement {
 					console.log(error);
 					this.errorMessage = html`${localize('errors.update_card')}
 						<a
-							href="https://docs.totaldebug.uk/atomic-calendar-revive/overview/faq.html"
+							href="https://docs.totaldebug.uk/atomic-calendar-revive-jrlambs/overview/faq.html"
 							target="${this._config.linkTarget}"
 							>See Here</a
 						>`;
@@ -653,7 +653,7 @@ class AtomicCalendarRevive extends LitElement {
 	}
 }
 
-customElements.define('atomic-calendar-revive-jrlambs', AtomicCalendarRevive);
+customElements.define('atomic-calendar-revivejrlambs', AtomicCalendarRevive);
 
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({

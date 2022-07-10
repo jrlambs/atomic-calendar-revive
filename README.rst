@@ -2,7 +2,7 @@
 .. raw:: html
 
       <p align="center">
-      <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/atomic_calendar_revive.png" alt="text">
+      <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive-jrlambs/master/.github/img/atomic_calendar_revive.png" alt="text">
       </p>
       <p align="center">
       An advanced calendar card for Home Assistant Lovelace.
@@ -12,19 +12,19 @@
 
 |commits| |issues| |pulls|
 
-.. |release| image:: https://img.shields.io/github/v/release/totaldebug/atomic-calendar-revive?color=ff7034&label=Release&sort=semver&style=flat-square
-   :target: https://github.com/totaldebug/atomic-calendar-revive/releases
-.. |stars| image:: https://img.shields.io/github/stars/totaldebug/atomic-calendar-revive.svg?style=flat-square
-   :target: https://github.com/totaldebug/atomic-calendar-revive
+.. |release| image:: https://img.shields.io/github/v/release/totaldebug/atomic-calendar-revive-jrlambs?color=ff7034&label=Release&sort=semver&style=flat-square
+   :target: https://github.com/totaldebug/atomic-calendar-revive-jrlambs/releases
+.. |stars| image:: https://img.shields.io/github/stars/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square
+   :target: https://github.com/totaldebug/atomic-calendar-revive-jrlambs
 .. |hacs| image:: https://img.shields.io/badge/HACS-Default-orange.svg?style=flat-square
    :target: https://github.com/hacs/integration
 
-.. |commits| image:: https://img.shields.io/github/last-commit/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white
-   :target: https://github.com/totaldebug/atomic-calendar-revive/commits/master
-.. |issues| image:: https://img.shields.io/github/issues-raw/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white
-   :target: https://github.com/totaldebug/atomic-calendar-revive/issues
-.. |pulls| image:: https://img.shields.io/github/issues-pr-raw/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white
-   :target: https://github.com/totaldebug/atomic-calendar-revive/pulls
+.. |commits| image:: https://img.shields.io/github/last-commit/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white
+   :target: https://github.com/totaldebug/atomic-calendar-revive-jrlambs/commits/master
+.. |issues| image:: https://img.shields.io/github/issues-raw/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white
+   :target: https://github.com/totaldebug/atomic-calendar-revive-jrlambs/issues
+.. |pulls| image:: https://img.shields.io/github/issues-pr-raw/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white
+   :target: https://github.com/totaldebug/atomic-calendar-revive-jrlambs/pulls
 
 
 *****
@@ -43,9 +43,9 @@ Allowing for the use of both Google Calendars and CalDav, With two main viewing 
 Configuration
 *************
 
-* `QuickStart Guide <https://docs.totaldebug.uk/atomic-calendar-revive/overview/quickstart.html>`_
-* `Full Documentation <https://docs.totaldebug.uk/atomic-calendar-revive>`_
-* `Release Notes <https://github.com/totaldebug/atomic-calendar-revive/releases>`_
+* `QuickStart Guide <https://docs.totaldebug.uk/atomic-calendar-revive-jrlambs/overview/quickstart.html>`_
+* `Full Documentation <https://docs.totaldebug.uk/atomic-calendar-revive-jrlambs>`_
+* `Release Notes <https://github.com/totaldebug/atomic-calendar-revive-jrlambs/releases>`_
 
 ********
 Features
@@ -106,8 +106,8 @@ Support
 
 Reach out to me at one of the following places:
 
-* `Discussions <https://github.com/totaldebug/atomic-calendar-revive/discussions>`_
-* `Issues <https://github.com/totaldebug/atomic-calendar-revive/issues/new/choose>`_
+* `Discussions <https://github.com/totaldebug/atomic-calendar-revive-jrlambs/discussions>`_
+* `Issues <https://github.com/totaldebug/atomic-calendar-revive-jrlambs/issues/new/choose>`_
 * `Discord <https://discord.gg/6fmekudc8Q>`_
 
 ******

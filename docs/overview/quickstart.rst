@@ -32,13 +32,13 @@ Install using `HACS` component:
 Manual
 ******
 
-#. Download ``atomic-calendar-revive.js`` file from the ``dist`` directory to ``/www/community/atomic-calendar-revive/atomic-calendar-revive.js`` directory in your Home Assistant - `latest release <https://github.com/totaldebug/atomic-calendar-revive/releases/latest>`_
+#. Download ``atomic-calendar-revive-jrlambs.js`` file from the ``dist`` directory to ``/www/community/atomic-calendar-revive-jrlambs/atomic-calendar-revive-jrlambs.js`` directory in your Home Assistant - `latest release <https://github.com/totaldebug/atomic-calendar-revive-jrlambs/releases/latest>`_
 #. If you use the Lovelace Editor then add the follwoing to ``Configuration -> Lovelace Dashboards -> Resources``
 
 .. code-block:: yaml
    :linenos:
 
-    /local/community/atomic-calendar-revive/atomic-calendar-revive.js
+    /local/community/atomic-calendar-revive-jrlambs/atomic-calendar-revive-jrlambs.js
 
 #. If you edit your files directly, add the below to the `ui-lovelace.yaml` file :
 
@@ -46,7 +46,7 @@ Manual
    :linenos:
 
     resources:
-      - url: /local/community/atomic-calendar-revive/atomic-calendar-revive.js
+      - url: /local/community/atomic-calendar-revive-jrlambs/atomic-calendar-revive-jrlambs.js
         type: module
 
 .. note::
@@ -105,7 +105,7 @@ Example:
 .. code-block:: yaml
    :linenos:
 
-    - type: "custom:atomic-calendar-revive"
+    - type: "custom:atomic-calendar-revive-jrlambs"
       entities:
       - entity: calendar.YOUR_CALENDAR_HERE
         name: 'My Calendar'

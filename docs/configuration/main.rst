@@ -7,7 +7,7 @@ Main Options
 ========================= ========= =============== ========== ==========================================================================================================================================================================================================================
  Name                      Type      Default         Since      Description
 ========================= ========= =============== ========== ==========================================================================================================================================================================================================================
- type                      string    **required**    v0.3.0     ``custom:atomic-calendar-revive``
+ type                      string    **required**    v0.3.0     ``custom:atomic-calendar-revive-jrlambs``
  entities                  list      **required**    v0.3.0     One or more calendars, configured in HA [Google Calendar Component][googlecalcomp]
  name                      string    optional        v0.12.0    Card name.
  maxDaysToShow             integer   optional        v0.3.0     ``7`` Maximum number of days to show; if set to zero will only display currently running events

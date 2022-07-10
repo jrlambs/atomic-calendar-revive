@@ -1,25 +1,25 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/atomic_calendar_revive.png" alt="Atomic Calendar Revive">
+  <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive-jrlambs/master/.github/img/atomic_calendar_revive.png" alt="Atomic Calendar Revive">
 </h1>
 <p align="center">
-    <a href="https://github.com/totaldebug/atomic-calendar-revive/releases">
-    <img src="https://img.shields.io/github/v/release/totaldebug/atomic-calendar-revive?color=ff7034&label=Release&sort=semver&style=flat-square"
+    <a href="https://github.com/totaldebug/atomic-calendar-revive-jrlambs/releases">
+    <img src="https://img.shields.io/github/v/release/totaldebug/atomic-calendar-revive-jrlambs?color=ff7034&label=Release&sort=semver&style=flat-square"
          alt="Latest Release"></a>
-     <a href="https://github.com/totaldebug/atomic-calendar-revive/commits/master">
-    <img src="https://img.shields.io/github/stars/totaldebug/atomic-calendar-revive.svg?style=flat-square"
+     <a href="https://github.com/totaldebug/atomic-calendar-revive-jrlambs/commits/master">
+    <img src="https://img.shields.io/github/stars/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square"
          alt="GitHub last commit"></a>
     <a href="https://github.com/custom-components/hacs">
     <img src="https://img.shields.io/badge/HACS-Default-orange.svg?style=flat-square"
          alt="HACS"></a><br />
-    <a href="https://github.com/totaldebug/atomic-calendar-revive/commits/master">
-    <img src="https://img.shields.io/github/last-commit/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/totaldebug/atomic-calendar-revive-jrlambs/commits/master">
+    <img src="https://img.shields.io/github/last-commit/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub last commit"></a>
-    <a href="https://github.com/totaldebug/atomic-calendar-revive/issues">
-    <img src="https://img.shields.io/github/issues-raw/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/totaldebug/atomic-calendar-revive-jrlambs/issues">
+    <img src="https://img.shields.io/github/issues-raw/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub issues"></a>
-    <a href="https://github.com/totaldebug/atomic-calendar-revive/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/totaldebug/atomic-calendar-revive.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/totaldebug/atomic-calendar-revive-jrlambs/pulls">
+    <img src="https://img.shields.io/github/issues-pr-raw/totaldebug/atomic-calendar-revive-jrlambs.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub pull requests"></a><br />
     <a href="https://github.com/sponsors/marksie1988">
     <img src="https://img.shields.io/static/v1.svg?label=Sponsor%20My%20Work&message=💝&color=black&logo=Sponsor%20My%20Work&logoColor=white&labelColor=ff7034&style=flat-square"
@@ -77,7 +77,7 @@ Allowing for the use of both Google Calendars and CalDav, With two main viewing 
 
 Add either a Google calendar or CalDav calendar to home assistant.
 
-Setup & Configuration is all provided within the [documentation](https://docs.totaldebug.uk/atomic-calendar-revive)
+Setup & Configuration is all provided within the [documentation](https://docs.totaldebug.uk/atomic-calendar-revive-jrlambs)
 
 ## Compatibility
 
@@ -95,8 +95,8 @@ Home Assistant 2022.5 will not work with the card you must upgrade to 2022.6
 Reach out to me at one of the following places:
 
 - [Discord](https://discord.gg/6fmekudc8Q)
-- [Discussions](https://github.com/totaldebug/atomic-calendar-revive/discussions)
-- [Issues](https://github.com/totaldebug/atomic-calendar-revive/issues)
+- [Discussions](https://github.com/totaldebug/atomic-calendar-revive-jrlambs/discussions)
+- [Issues](https://github.com/totaldebug/atomic-calendar-revive-jrlambs/issues)
 
 ## License
 
