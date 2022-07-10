@@ -9,12 +9,12 @@ code reviewed and accepted.
 Setup Repository
 ****************
 
-* Fork the repo in `github <https://github.com/totaldebug/atomic-calendar-revive-jrlambs>`_
+* Fork the repo in `github <https://github.com/totaldebug/atomic-calendar-revive>`_
 * Clone the project to your development machine
 
 .. code-block:: bash
 
-    git clone https://github.com/your-username/atomic-calendar-revive-jrlambs.git
+    git clone https://github.com/your-username/atomic-calendar-revive.git
 
 *******************
 Create Topic Branch
@@ -28,7 +28,7 @@ from the main repository:
 
 .. code-block:: bash
 
-      git remote add upstream https://github.com/totaldebug/atomic-calendar-revive-jrlambs
+      git remote add upstream https://github.com/totaldebug/atomic-calendar-revive
 
 
 Checkout the master branch and pull the latest upstream version:
@@ -96,7 +96,7 @@ In the context of semantic versioning, the following should apply:
   functionality in a backwards compatible manner.
 * **Patch** - A change that resolves a specific bug.
 
-All changes are tracked in the `release notes <https://github.com/totaldebug/atomic-calendar-revive-jrlambs/releases>`_
+All changes are tracked in the `release notes <https://github.com/totaldebug/atomic-calendar-revive/releases>`_
 
 
 **************

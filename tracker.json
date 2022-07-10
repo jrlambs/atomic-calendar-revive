@@ -2,8 +2,8 @@
 	"atomic-calendar-revive-jrlambs": {
 		"updated_at": "2022-01-06",
 		"version": "6.2.0",
-		"remote_location": "https://github.com/marksie1988/atomic-calendar-revive-jrlambs/releases/latest/dist/atomic-calendar-revive-jrlambs.js",
-		"visit_repo": "https://github.com/marksie1988/atomic-calendar-revive-jrlambs",
-		"changelog": "https://github.com/marksie1988/atomic-calendar-revive-jrlambs/releases/latest"
+		"remote_location": "https://github.com/marksie1988/atomic-calendar-revive/releases/latest/dist/atomic-calendar-revive.js",
+		"visit_repo": "https://github.com/marksie1988/atomic-calendar-revive",
+		"changelog": "https://github.com/marksie1988/atomic-calendar-revive/releases/latest"
 	}
 }
