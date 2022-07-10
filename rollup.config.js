@@ -53,7 +53,7 @@ const plugins = [
 export default {
 	input: ['./src/index.ts'],
 	output: {
-		file: './dist/atomic-calendar-revive-jrlambs.js',
+		file: './dist/atomic-calendar-revive.js',
 		format: 'iife',
 		compact: true,
 	},

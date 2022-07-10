@@ -172,7 +172,7 @@ class AtomicCalendarRevive extends LitElement {
 			});
 
 			console.info(
-				`%c atomic-calendar-revive-jrlambs %c ${localize('common.version')}: ${CARD_VERSION} %c ${this.language} `,
+				`%c atomic-calendar-revive %c ${localize('common.version')}: ${CARD_VERSION} %c ${this.language} `,
 				'color: white; background: #484848; font-weight: 700;',
 				'color: white; background: #cc5500; font-weight: 700;',
 				'color: white; background: #303775; font-weight: 700;',
@@ -653,11 +653,11 @@ class AtomicCalendarRevive extends LitElement {
 	}
 }
 
-customElements.define('atomic-calendar-revive-jrlambs', AtomicCalendarRevive);
+customElements.define('atomic-calendar-revive', AtomicCalendarRevive);
 
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
-	type: 'atomic-calendar-revive-jrlambs',
+	type: 'atomic-calendar-revive',
 	name: 'Atomic Calendar Revive',
 	preview: true,
 	description: localize('common.description'),
